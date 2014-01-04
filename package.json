@@ -1,0 +1,26 @@
+{
+  "name": "assetBuilder",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "axis": "0.0.0",
+    "roots": "~2.1.2",
+    "autoprefixer-stylus": "0.0.3"
+  },
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.8.0",
+    "grunt-contrib-stylus": "~0.11.0",
+    "grunt-markdown": "~0.4.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-amd-wrap": "~1.0.1",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0"
+  }
+}
