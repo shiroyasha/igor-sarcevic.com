@@ -1,0 +1,1 @@
+define("t/v",["require","exports","module"],function(e,t,n){}),define("vba",["require","exports","module","t/v"],function(e,t,n){var r,i;i=e("t/v"),r=function(e,t){return e+t}}),define("app",["require","exports","module","vba"],function(e,t,n){var r;r=e("vba"),console.log("aaaaaaa")});
