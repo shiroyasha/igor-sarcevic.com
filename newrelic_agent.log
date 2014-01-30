@@ -1,0 +1,18 @@
+{"name":"newrelic","hostname":"ninja","pid":16190,"level":30,"msg":"Starting New Relic Node.js instrumentation.","time":"2014-01-30T15:24:38.830Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16190,"component":"data_sender","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/533270/applications/2398321","time":"2014-01-30T15:24:39.797Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16190,"component":"connection","level":30,"msg":"Connected to collector-0.newrelic.com:80 with agent run ID 568887687.","time":"2014-01-30T15:24:39.798Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16190,"level":30,"msg":"Configuration of product_level was changed to 20 by New Relic.","time":"2014-01-30T15:24:39.799Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16190,"level":30,"msg":"Configuration of collect_traces was changed to false by New Relic.","time":"2014-01-30T15:24:39.801Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16190,"level":30,"msg":"Configuration of application_id was changed to 2398321 by New Relic.","time":"2014-01-30T15:24:39.801Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16645,"level":30,"msg":"Starting New Relic Node.js instrumentation.","time":"2014-01-30T15:25:07.028Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16645,"component":"data_sender","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/533270/applications/2398321","time":"2014-01-30T15:25:08.952Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16645,"component":"connection","level":30,"msg":"Connected to collector-0.newrelic.com:80 with agent run ID 568888084.","time":"2014-01-30T15:25:08.952Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16645,"level":30,"msg":"Configuration of product_level was changed to 20 by New Relic.","time":"2014-01-30T15:25:08.953Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16645,"level":30,"msg":"Configuration of collect_traces was changed to false by New Relic.","time":"2014-01-30T15:25:08.955Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":16645,"level":30,"msg":"Configuration of application_id was changed to 2398321 by New Relic.","time":"2014-01-30T15:25:08.955Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":17017,"level":30,"msg":"Starting New Relic Node.js instrumentation.","time":"2014-01-30T15:28:15.905Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":17017,"component":"data_sender","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/533270/applications/2398321","time":"2014-01-30T15:28:16.999Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":17017,"component":"connection","level":30,"msg":"Connected to collector-0.newrelic.com:80 with agent run ID 568890930.","time":"2014-01-30T15:28:17.000Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":17017,"level":30,"msg":"Configuration of product_level was changed to 20 by New Relic.","time":"2014-01-30T15:28:17.001Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":17017,"level":30,"msg":"Configuration of collect_traces was changed to false by New Relic.","time":"2014-01-30T15:28:17.003Z","v":0}
+{"name":"newrelic","hostname":"ninja","pid":17017,"level":30,"msg":"Configuration of application_id was changed to 2398321 by New Relic.","time":"2014-01-30T15:28:17.003Z","v":0}

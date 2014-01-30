@@ -1,4 +1,4 @@
-//require('newrelic');
+require('newrelic');
 
 var express = require('express');
 var app = express();
@@ -9,7 +9,10 @@ app.use( express.compress() );
 
 app.use( express.static(__dirname + '/public-build-min', { maxAge: oneDay }) );
 
-app.listen(process.env.PORT || 3000);
+var port = Number( process.env.PORT || 3000 );
+app.listen( port, function() {
+	console.log( 'listening on post: ' + port );
+});
 
 
 
