@@ -1,0 +1,67 @@
+
+normalize()
+
+@import 'axis'
+
+@import 'settings'
+@import 'typography'
+@import 'likes'
+@import 'share'
+
+body
+	background url('../img/geometry.png')
+	color color-text
+
+.header
+	text-align center
+	margin: 128px 0
+	
+	img
+		overflow hidden
+		border-radius 50%
+		width 253px
+		height 261px
+		border 5px solid color-text
+		padding 5px
+		vertical-align middle
+
+	.name
+		display inline-block
+		vertical-align middle
+		text-align left
+		margin-left 24px
+
+		h1
+			margin-bottom 0
+			font-size 72px
+			line-height 72px
+
+			& + strong
+				font-size 32px
+				line-height 2
+
+				span
+					color color-orange
+
+.article
+	clearfix()
+
+	h1
+		font-size 36px
+		line-height 2
+		margin 0
+		text-align center
+
+	p
+		display block
+		float left
+		width 50%
+		padding 0 24px
+		box-sizing border-box
+
+
+
+@import 'layout/wide-desktop'
+
+
+

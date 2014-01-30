@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Gentium+Basic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+	<link rel="icon" type="image/png" href="favicon.ico">
+
+	<title>Igor Šarčević | Full Stack Web Developer</title>
+
+</head>
+<body>
+
+<!-- 	<aside class='likes'>
+
+		<div class="circle">
+			<div class="inner">
+				<i class='icon-heart'></i>	
+			</div>
+		</div>
+
+		<div class="under">
+			<div class="number">
+				<p class='data'>672</p>
+				<p>likes</p>
+			</div>
+
+			<div class="warning">
+				<p>Don't move !</p>
+			</div>
+		</div>
+
+	</aside> -->
+
+	<div class="content">
+
+		<header class="header">
+			<img src="img/me.jpg" alt="Igor Šarčević">
+
+			<div class='name'>
+				<h1 class='title'>Igor Šarčević</h1>
+				<strong>full stack <span>{ web }</span> developer</strong>
+			</div>
+		</header>
+
+
+		<article class="article" data-sharable>
+			<% partials/making_a_change %>
+		</article>
+
+		<article class="article" data-sharable>
+			<% partials/programming %>
+		</article>
+
+	</div>
+	
+	<script src='vendor/vendor.js'></script>
+	<script src='vendor/require.js' data-main='script/app'></script>
+</body>
+</html>

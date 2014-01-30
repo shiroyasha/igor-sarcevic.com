@@ -1,12 +1,10 @@
-compilePartials = require('./.config/compilePartials')
+compilePartials = require('./config/compilePartials')
 
 module.exports = (grunt) ->
 
   settings = {
-    sourceFolder: 'public-src'
-    tempFolder: '.config/temp'
-    outputFolder: 'public-build'
-    productionReadyFolder: 'public-build-min'
+    sourceFolder: 'src'
+    outputFolder: 'out'
 
     scriptsFolder: 'script'
     vendorFolder: 'vendor'
@@ -15,25 +13,13 @@ module.exports = (grunt) ->
     imageFolder: 'img'
   }
 
-
-  rules1 = ( srcFiles, compiledExt, options ) ->
-    compile: {
+  selectFiles = ( srcFiles, extension, options ) ->
+    {
       expand: true
       cwd: settings.sourceFolder
       src: srcFiles
-      dest: settings.tempFolder
-      ext: compiledExt
-
-      options: options
-    }
-
-  rules2 = ( srcFiles, compiledExt, options ) ->
-    compile: {
-      expand: true
-      cwd: settings.tempFolder
-      src: srcFiles
       dest: settings.outputFolder
-      ext: compiledExt
+      ext: extension
 
       options: options
     }
@@ -45,12 +31,13 @@ module.exports = (grunt) ->
 
 
     # coffee compiler
-    coffee: rules1(['**/*.js.coffee'], '.js', {
-      bare: true
-    })
+    coffee: 
+      compile: selectFiles(['**/*.coffee'], '.js', {
+        bare: true
+      })
 
     # stylus compiler
-    stylus: rules1(['**/*.css.styl'], '.css', {
+    stylus: {
       use: [
         require('axis-css')
       ]
@@ -58,7 +45,7 @@ module.exports = (grunt) ->
 
     # markdown compiler
     markdown: rules1(['**/*.partial.md'], '.partial', {
-      template: '.config/template.html'
+      template: 'config/template.html'
     })
 
 
@@ -66,7 +53,7 @@ module.exports = (grunt) ->
       cycle1:
         expand: true
         cwd: settings.sourceFolder
-        src: ["**/*", '!**/*.js.coffee', '!**/*.styl', '!**/*.partial.md', '!script', '!style']
+        src: ["**/*", '!**/*.js.coffee', '!**/*.css.styl', '!**/*.partial.md']
         dest: settings.tempFolder
 
       cycle2:
@@ -123,12 +110,7 @@ module.exports = (grunt) ->
           out: settings.productionReadyFolder + '/script/app.js'
         
 
-    autoprefixer:
-        options:
-            browsers: ['last 5 versions']
-        compile: 
-            src: settings.outputFolder + '/style/style.css'
-            dest: settings.outputFolder + '/style/style.css'
+
 
   }
 
@@ -144,7 +126,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks("grunt-amd-wrap")
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-clean')
-  grunt.loadNpmTasks('grunt-autoprefixer')
 
   grunt.registerMultiTask 'partial', 'Compiles partials into html', compilePartials(grunt)
 
@@ -154,7 +135,7 @@ module.exports = (grunt) ->
 
   # Default task(s).
   grunt.registerTask('default', ['clean', 'copy:cycle1', 'coffee:compile',
-    'stylus:compile', 'markdown:compile',  'copy:cycle2', 'partial:compile', 'concat', 'amdwrap', 'autoprefixer' ])
+    'stylus:compile', 'markdown:compile',  'copy:cycle2', 'partial:compile', 'concat', 'amdwrap' ])
 
 
   grunt.registerTask('production', ['default', 'copy:cycle3', 'requirejs', 'copy:cycle4'])

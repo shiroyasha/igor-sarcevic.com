@@ -1,0 +1,24 @@
+<!--
+#Making the world a better place is my life goal.
+
+
+I enjoy to explore new **ideas**,
+to do things that that seem **impossible** to others,
+to **share** my knowledge,
+and to create and build **impressive** and truly great things.
+
+I like to think of myself as a
+**general problem solver**,
+an out of the box thinker,
+and of course one of **the best**
+front-end developers you can find.
+
+My life goal is to bring 
+**fun** and **joy** into peoples lives 
+through technology and science.
+-->
+
+
+
+
+
